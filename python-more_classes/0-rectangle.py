@@ -5,4 +5,3 @@
 class Rectangle:
     """The Rectanglele class."""
     pass
-

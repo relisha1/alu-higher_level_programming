@@ -80,4 +80,3 @@ class Rectangle:
         """Prints Bye rectangle... when a Rectangle obj is deleted"""
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-

@@ -65,4 +65,3 @@ class Rectangle:
         """Return the string representation of the Rectangle."""
         string = f"Rectangle({str(self.__width)}, {str(self.__height)})"
         return string
-
