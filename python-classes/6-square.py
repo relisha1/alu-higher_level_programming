@@ -56,4 +56,3 @@ class Square:
             [print(" ", end="") for val in range(self.__position[0])]
             [print("#", end="") for val in range(self.__size)]
             print()
-
