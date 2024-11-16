@@ -2,9 +2,8 @@
 """
 Script that adds all command-line arguments to a list and saves them to a JSON file.
 It uses `save_to_json_file` to save the list and `load_from_json_file` to load it.
-If the file doesn't exist, it is created.
+If the file doesn't exist, it creates a new file with the list.
 """
-
 import sys
 from 5-save_to_json_file import save_to_json_file
 from 6-load_from_json_file import load_from_json_file
@@ -22,7 +21,7 @@ def add_items():
         # If the file does not exist, start with an empty list
         items = []
 
-    # Add all command-line arguments (except the script name itself)
+    # Add all command-line arguments (excluding the script name itself)
     items.extend(sys.argv[1:])
     
     # Save the updated list back to the file
