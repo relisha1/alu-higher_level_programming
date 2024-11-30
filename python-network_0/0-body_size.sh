@@ -8,5 +8,5 @@ if [ -z "$1" ]; then
 fi
 
 # Send the request and get the body size
-curl -s -w "%{size_download}\n" -o /dev/null "$1"
+curl -s -o /dev/null -w "%{size_download}" "$1"
 
