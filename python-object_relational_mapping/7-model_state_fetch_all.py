@@ -16,3 +16,7 @@ def main(argv):
     for instance in session.query(State).order_by(asc(State.id)):
         print(str(instance.id) + ': ' + instance.name)
     session.close()
+
+
+if __name__ == '__main__' and len(sys.argv) == 4:
+    main(sys.argv)
