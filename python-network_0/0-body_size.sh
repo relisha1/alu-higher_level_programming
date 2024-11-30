@@ -1,3 +1,12 @@
 #!/bin/bash
-# Get the byte size of the HTTP response header for a given URL.
-curl -s "$1" | wc -c"
+# 0-body_size.sh - This script takes a URL, sends a request, and displays the size of the body of the response
+
+# Check if a URL argument was provided
+if [ -z "$1" ]; then
+    echo "Usage: $0 <URL>"
+    exit 1
+fi
+
+# Send the request and get the body size
+curl -s -w "%{size_download}\n" -o /dev/null "$1"
+
